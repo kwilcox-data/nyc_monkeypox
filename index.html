@@ -31,13 +31,16 @@
 	<br>
 
 	<!-- Step 2 -->
-	
 	  <script type="text/javascript">
-            // make_the_json() is some javascript function you've written
-            // which creates the appropriate JSON configuration
-            var timeline_json = make_the_json(); 
-            window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+            var additionalOptions = {
+                font: 'opensans-gentiumbook'
+            }
+
+            timeline = new TL.Timeline('timeline-embed',
+            "https://docs.google.com/spreadsheets/d/1m1MdYu6A1Vf1SUrNCDLQY302GjdjkAVFqRlDV7_4DI8/edit#gid=0",
+            additionalOptions);
         </script>
+
 	
 	<!-- Step 3 -->
 	
